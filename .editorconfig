@@ -1,0 +1,53 @@
+root = true
+
+# Global
+[*]
+tab_width = 4
+indent_size = 4
+charset = utf-8
+indent_style = space
+insert_final_newline = false
+trim_trailing_whitespace = true
+
+
+# Solution
+[*.sln]
+indent_style = tab
+
+
+# Markdown
+[*.md]
+trim_trailing_whitespace = false
+
+
+# XML
+[*.{csproj}]
+indent_size = 2
+
+
+# Configuration
+[*.{json,xml,yml,config,props,targets,nuspec,resx,ruleset}]
+indent_size = 2
+
+
+# CSharp
+[*.cs]
+end_of_line = lf
+insert_final_newline = true
+
+## Naming
+dotnet_naming_style.pascal_case.capitalization = pascal_case
+dotnet_naming_style.begins_with_i.capitalization = pascal_case
+
+## StyleCop
+dotnet_diagnostic.SA1101.severity = none
+dotnet_diagnostic.SA1124.severity = none
+dotnet_diagnostic.SA1200.severity = none
+dotnet_diagnostic.SA1202.severity = none
+dotnet_diagnostic.SA1210.severity = none
+dotnet_diagnostic.SA1309.severity = none
+dotnet_diagnostic.SA1623.severity = none
+dotnet_diagnostic.SA1629.severity = none
+dotnet_diagnostic.SA1633.severity = none
+dotnet_diagnostic.SA1642.severity = none
+dotnet_diagnostic.SA1643.severity = none
