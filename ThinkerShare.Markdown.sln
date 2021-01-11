@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{AE6CB068-014
 	ProjectSection(SolutionItems) = preProject
 		doc\design.md = doc\design.md
 		doc\feature.md = doc\feature.md
-		doc\spec-0.29.json = doc\spec-0.29.json
+		doc\spec-0.29-zh-Hans.md = doc\spec-0.29-zh-Hans.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThinkerShare.Markdown", "src\ThinkerShare.Markdown\ThinkerShare.Markdown.csproj", "{24FC9670-0E62-42FA-8A67-F89799225D3D}"
