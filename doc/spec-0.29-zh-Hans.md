@@ -28,7 +28,131 @@
 
 ### 制表符(Tabs)
 
+> 说明: tab在下面的代码块中使用→替代
+
+1. 示例
+    ```
+    →foo→baz→→bim
+    --------------------------
+    <pre><code>foo→baz→→bim
+    </code></pre>
+    ```
+2. 示例
+    ```
+      →foo→baz→→bim
+    --------------------------
+    <pre><code>foo→baz→→bim
+    </code></pre>
+    ```
+3. 示例
+    ```
+        a→a
+        ὐ→a
+    --------------------------
+    <pre><code>a→a
+    ὐ→a
+    </code></pre>
+    ```
+
+```````````````````````````````` example
+  - foo
+
+→bar
+.
+<ul>
+<li>
+<p>foo</p>
+<p>bar</p>
+</li>
+</ul>
+````````````````````````````````
+
+```````````````````````````````` example
+- foo
+
+→→bar
+.
+<ul>
+<li>
+<p>foo</p>
+<pre><code>  bar
+</code></pre>
+</li>
+</ul>
+````````````````````````````````
+
+Normally the `>` that begins a block quote may be followed
+optionally by a space, which is not considered part of the
+content.  In the following case `>` is followed by a tab,
+which is treated as if it were expanded into three spaces.
+Since one of these spaces is considered part of the
+delimiter, `foo` is considered to be indented six spaces
+inside the block quote context, so we get an indented
+code block starting with two spaces.
+
+```````````````````````````````` example
+>→→foo
+.
+<blockquote>
+<pre><code>  foo
+</code></pre>
+</blockquote>
+````````````````````````````````
+
+```````````````````````````````` example
+-→→foo
+.
+<ul>
+<li>
+<pre><code>  foo
+</code></pre>
+</li>
+</ul>
+````````````````````````````````
+
+
+```````````````````````````````` example
+    foo
+→bar
+.
+<pre><code>foo
+bar
+</code></pre>
+````````````````````````````````
+
+```````````````````````````````` example
+ - foo
+   - bar
+→ - baz
+.
+<ul>
+<li>foo
+<ul>
+<li>bar
+<ul>
+<li>baz</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+````````````````````````````````
+
+1. 示例
+    ```
+    #→Foo
+    -----------------------------------------
+    <h1>Foo</h1>
+    ```
+1. 示例
+    ```
+    *→*→*→
+    -----------------------------------------
+    <hr />
+    ```
+
 ### 不安全字符
+> 出于安全原因,Unicode字符`U+0000`总应该使用`U+FFFD`(replacement character)替换
 
 ## 元素类型
 
