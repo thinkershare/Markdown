@@ -2,7 +2,7 @@
 
 >> 代码编写中...
 
-English | [英文](README-en.md)
+中文 | [English](README-en.md)
 ## 背景
 Markdown是一个高性能的Markdown处理器,它基于`.NET Standard 2.1`和`C#`实现.
 
